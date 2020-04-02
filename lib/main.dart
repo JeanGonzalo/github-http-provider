@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:github_api/Providers/UserProvider.dart';
+import 'package:provider/provider.dart';
 
 void main() => runApp(
       MaterialApp(
@@ -13,14 +15,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _StateHomePage extends State<HomePage> {
-
   TextEditingController _controller = TextEditingController();
-  void _getUser(){
-    if(_controller.text == ''){
-      
-    }else{
-      
-    }
+  void _getUser() {
+    if (_controller.text == '') {
+    } else {}
   }
 
   @override
@@ -84,8 +82,9 @@ class _StateHomePage extends State<HomePage> {
                 child: Align(
                   child: Text('Get Your Follow me Now',
                       style: TextStyle(color: Colors.white)),
-                ), onPressed: (){
-                  _getUser()
+                ),
+                onPressed: () {
+                  _getUser();
                 },
               )
             ],
